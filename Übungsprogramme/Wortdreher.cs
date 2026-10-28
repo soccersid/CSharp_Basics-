@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Palindromtest
+namespace wortdreher
 {
     internal class Program
     {
