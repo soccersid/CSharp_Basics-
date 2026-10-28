@@ -15,23 +15,26 @@ namespace Primzahlentest
 
             bool ist_prim; // Deklerieren der Variable ist_prim
             ist_prim = true; // Ansatz: jede Zahl ist prim, bis man einen Teiler findet
-
-            while ((long)teiler*teiler <= zahl) // Erstellen einer Schleife; Abbruch wenn "teiler" größer als Quadratwurzel von "zahl" wird
+            if (zahl >= 2)
             {
-                if (zahl % teiler == 0) // Wenn "teiler" "zahl" restlos teilt, kann es keine Primzahl mehr sein
+                while ((long)teiler*teiler <= zahl) // Erstellen einer Schleife; Abbruch wenn "teiler" größer als Quadratwurzel von "zahl" wird
                 {
-                    ist_prim = false;
-                } 
-                    
-
-                teiler += 1; // "teiler" wird die nächstgröße natürliche Zahl
+                    if (zahl % teiler == 0) // Wenn "teiler" "zahl" restlos teilt, kann es keine Primzahl mehr sein
+                    {
+                        ist_prim = false;
+                        break; 
+                    } 
+                        
+    
+                    teiler += 1; // "teiler" wird die nächstgröße natürliche Zahl
+                }
             }
 
             // Ausnahmefälle handeln
 
             if (zahl == 2)
             {
-                ist_prim = true; // Zwei wird direkt auf false gesetzt, da zwei der Start-Teiler ist, obwohl es eine Primzahl ist
+                ist_prim = true; // Zwei wird direkt auf true gesetzt, da zwei der Start-Teiler ist, obwohl es eine Primzahl ist
             }
             else if (zahl < 2 )
             {
