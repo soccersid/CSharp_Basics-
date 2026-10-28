@@ -1,6 +1,6 @@
 using System;
 
-namespace Menü
+namespace Fibonacci
 {
     internal class Program
     {
