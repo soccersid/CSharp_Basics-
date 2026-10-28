@@ -28,7 +28,9 @@ namespace Zahlensortierer
                   }
               }
           }
-          Console.WriteLine(zahlen)    
+          // Sortierte Liste sauber ausgeben
+          Console.WriteLine("\nSortierte Liste:");
+          Console.WriteLine(string.Join(", ", zahlen));        
         }
     }
 }
