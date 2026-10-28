@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace Menü
+namespace Palindromtest
 {
     internal class Program
     {
