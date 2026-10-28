@@ -6,8 +6,8 @@ namespace Fibonacci
     {
         public static void Main(string[] args)
         {
-            //Ziel des Programms ist es, die Fibonacci-Folge bis zur Zahl n auszugeben.
-            Console.WriteLine("Geben sie an, wieviele Zahlen der Fibonacci-Folge ausgegeben werden sollen");
+            //Ziel des Programms ist es, die ersten n Fibonacci-Zahlen auszugeben.
+            Console.WriteLine("Geben sie an, wie viele Zahlen der Fibonacci-Folge ausgegeben werden sollen "); // ab 47 ist die Zahl zu groß für int
 
             //Wir deklarieren und initialisieren die Variablen
             int n = Convert.ToInt32(Console.ReadLine());
